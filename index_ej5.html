@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+</head>
+<body>
+    <div id="app5">
+    <h1>Lista de tareas</h1>
+    <hr>
+
+    <input v-model="nuevaTarea" placeholder="Añade algo..." type="text"/>
+    <button v-on:click="agregarTarea">Agregar Tarea</button>
+
+<ul>
+    <li v-for="tarea in tareas" :key="tarea.id"> {{ tarea.name }} 
+        <button v-on:click="borrarTarea(tarea.id)">Eliminar</button>
+    </li>
+</ul>
+
+</div>
+    
+</body>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="./ej5.js"></script>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="app6">
+    <h1>Calculadora</h1>
+    <hr>
+
+    <p>Ingrese 2 numeros a calcular</p>
+
+    <input v-model="num1" placeholder="Digite un numero" type="number"/>
+    <input v-model="num2" placeholder="Digite un numero" type="number"/>
+    <button v-on:click="limpiar">Limpiar</button>
+
+    <p>Presione el boton segun el cálculo que desea operar</p>
+
+    <button v-on:click="calcularS">Sumar</button>
+    <button v-on:click="calcularR">Restar</button>
+    <button v-on:click="calcularM">Multiplicar</button>
+    <button v-on:click="calcularD">Dividir</button>
+
+<div>
+    <p><blockquote>Resultado: {{ resultado }}</blockquote></p>
+</div>
+
+</div>
+    
+</body>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="./ej6.js"></script>
+
+</html>

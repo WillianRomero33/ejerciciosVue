@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema Oscuro</title>
+
+    <style>
+        body {
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .claro {
+            background-color: white;
+            color: black;
+        }
+        .oscuro {
+            background-color: black;
+            color: white;
+        }
+        button {
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+<body :class="tema">
+    <div id="app7">
+    <h1>Toggie</h1>
+    <hr>
+
+    <p>Presione el botón para cambiar el tema (Oscuro o Claro)</p>
+
+    <button v-on:click="cambiarTema">Cambiar a {{ tema === 'oscuro' ? 'Claro' : 'Oscuro' }}</button>
+
+</div>
+    
+</body>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="./ej7.js"></script>
+
+</html>

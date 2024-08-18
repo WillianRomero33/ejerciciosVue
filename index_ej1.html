@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida</title>
+</head>
+<body>
+    <div id="app">
+
+        <h3> {{ msj }}</h3>
+        <blockquote> - {{ autor }} -</blockquote>
+
+        <hr>
+        
+        <p>¿Quieres saber por qué?, has click en el botón ↓</p>
+        <button type="button" v-on:Click="cambiarFrase">Cambiar mensaje</button>
+    </div>
+    
+</body>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="./ej1.js"></script>
+</html>
