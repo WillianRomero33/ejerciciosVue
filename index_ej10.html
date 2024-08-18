@@ -7,10 +7,15 @@
 </head>
 <body>
     <div id="app10">
-        
+        <h1>Mostrar un mensaje a partir del cambio de una variable</h1>
+        <hr>
+        <p>digite "vue", conozca el mensaje</p>
+        <input v-model="valor" placeholder="Ingrese un valor" />
+        <p>¿Quiere saber por qué?</p>
+        <mensaje-variable :valor="valor" />
     </div>
-</body>
 
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-<script src="./ej10.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./ej10.js"></script>
+</body>
 </html>
