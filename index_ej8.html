@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar mensaje</title>
+</head>
+<body>
+    <div id="app8">
+        <h1>Aplicación con Mensaje Condicional</h1>
+        <hr>
+        <!-- Usar el componente MensajeCondicional -->
+        <mensaje-condicional :condicion="condicion" />
+        <br>
+
+        <button v-on:click="cambiarCondicion">Cambiar Condición</button>
+
+</div>
+<button v-on:click="cambiarCondicion">Cambiar Condición</button>
+
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <script src="./ej8.js"></script>
+
+</body>
+</html>

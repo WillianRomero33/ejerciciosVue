@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concatenar</title>
+</head>
+<body>
+    <div id="app9">
+        <h1>Aplicación con Mensaje Condicional</h1>
+        <hr>
+        <input v-model="nombres" id type="text" placeholder="Ingresa tus nombres">
+        <input v-model="apellidos" type="text" placeholder="Ingresa tus apellidos">
+        
+        <br>
+        <button v-on:click="nombreCompleto">Generar Nombre Completo</button>
+        <br>
+        <p>Tu nombre completo es: </p>
+        <p> {{ nombreC }}</p>
+</body>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="./ej9.js"></script>
+
+</html>
